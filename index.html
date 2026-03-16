@@ -8,7 +8,26 @@
     name="description"
     content="ClearPath Web Development builds clean, modern websites for small businesses."
   />
+
   <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <meta property="og:title" content="ClearPath Web Development | Websites for Small Businesses" />
+  <meta
+    property="og:description"
+    content="Clean, modern websites for small businesses that want to build trust, attract customers, and grow online."
+  />
+  <meta property="og:image" content="https://clearpathweb.dev/images/favicon.png" />
+  <meta property="og:url" content="https://clearpathweb.dev/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="ClearPath Web Development | Websites for Small Businesses" />
+  <meta
+    name="twitter:description"
+    content="Clean, modern websites for small businesses that want to build trust, attract customers, and grow online."
+  />
+  <meta name="twitter:image" content="https://clearpathweb.dev/images/favicon.png" />
+
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -421,63 +440,64 @@
         </p>
       </div>
 
-  <form 
-  name="contact"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  class="space-y-4">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="space-y-4"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="subject" value="New website inquiry from ClearPath Web Development" />
 
-  <input type="hidden" name="form-name" value="contact" />
-      
-  <p class="hidden">
-    <label>Don’t fill this out if you're human: 
-      <input name="bot-field" />
-    </label>
-  </p>
-  
-  <input
-    type="text"
-    name="name"
-    placeholder="Name"
-    required
-    class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
-  />
+        <p class="hidden">
+          <label>Don’t fill this out if you're human:
+            <input name="bot-field" />
+          </label>
+        </p>
 
-  <input
-    type="email"
-    name="email"
-    placeholder="Email"
-    required
-    class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
-  />
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
+        />
 
-  <select
-  name="budget"
-  required
-  class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none">
-  <option value="" disabled selected>Project Budget</option>
-  <option value="$800-$1200">$800 – $1200</option>
-  <option value="$1200-$2000">$1200 – $2000</option>
-  <option value="$2000+">$2000+</option>
-  </select>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
+        />
 
-  <textarea
-    name="message"
-    placeholder="What does your business need help with?"
-    rows="5"
-    required
-    class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
-  ></textarea>
+        <select
+          name="budget"
+          required
+          class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
+        >
+          <option value="" disabled selected>Project Budget</option>
+          <option value="$800-$1200">$800 – $1200</option>
+          <option value="$1200-$2000">$1200 – $2000</option>
+          <option value="$2000+">$2000+</option>
+        </select>
 
-  <button
-    type="submit"
-    class="bg-[#c94277] text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition"
-  >
-    Send Message
-  </button>
+        <textarea
+          name="message"
+          placeholder="What does your business need help with?"
+          rows="5"
+          required
+          class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
+        ></textarea>
 
-  </form>
+        <button
+          type="submit"
+          class="bg-[#c94277] text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition"
+        >
+          Send Message
+        </button>
+      </form>
     </div>
   </section>
 
