@@ -421,32 +421,46 @@
         </p>
       </div>
 
-      <form class="space-y-4">
-        <input
-          type="text"
-          placeholder="Name"
-          class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
-        />
+  <form 
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  class="space-y-4">
 
-        <input
-          type="email"
-          placeholder="Email"
-          class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
-        />
+  <input type="hidden" name="form-name" value="contact" />
 
-        <textarea
-          placeholder="What does your business need help with?"
-          rows="5"
-          class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
-        ></textarea>
+  <input
+    type="text"
+    name="name"
+    placeholder="Name"
+    required
+    class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
+  />
 
-        <button
-          type="submit"
-          class="bg-[#c94277] text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition"
-        >
-          Send Message
-        </button>
-      </form>
+  <input
+    type="email"
+    name="email"
+    placeholder="Email"
+    required
+    class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
+  />
+
+  <textarea
+    name="message"
+    placeholder="What does your business need help with?"
+    rows="5"
+    required
+    class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
+  ></textarea>
+
+  <button
+    type="submit"
+    class="bg-[#c94277] text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition"
+  >
+    Send Message
+  </button>
+
+  </form>
     </div>
   </section>
 
