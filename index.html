@@ -425,10 +425,17 @@
   name="contact"
   method="POST"
   data-netlify="true"
+  netlify-honeypot="bot-field"
   class="space-y-4">
 
   <input type="hidden" name="form-name" value="contact" />
-
+      
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: 
+      <input name="bot-field" />
+    </label>
+  </p>
+  
   <input
     type="text"
     name="name"
@@ -444,6 +451,16 @@
     required
     class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none"
   />
+
+  <select
+  name="budget"
+  required
+  class="w-full p-3 rounded-xl text-[#2f0a28] bg-white border border-white/20 focus:outline-none">
+  <option value="" disabled selected>Project Budget</option>
+  <option value="$800-$1200">$800 – $1200</option>
+  <option value="$1200-$2000">$1200 – $2000</option>
+  <option value="$2000+">$2000+</option>
+  </select>
 
   <textarea
     name="message"
