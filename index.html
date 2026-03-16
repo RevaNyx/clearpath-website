@@ -8,6 +8,7 @@
     name="description"
     content="ClearPath Web Development builds clean, modern websites for small businesses."
   />
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -160,19 +161,36 @@
   <!-- PROJECTS -->
   <section id="projects" class="py-20 px-6 bg-[#f6f1ed]">
     <div class="max-w-6xl mx-auto">
-      <div class="max-w-2xl mb-12">
-        <p class="text-sm font-semibold uppercase tracking-widest text-[#c94277] mb-3">
-          Recent Work
-        </p>
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#2f0a28]">
-          Real projects
-        </h2>
-        <p class="text-[#94524a] text-lg">
-          A few examples of websites I’ve built for real businesses.
-        </p>
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+        <div class="max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-widest text-[#c94277] mb-3">
+            Recent Work
+          </p>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#2f0a28]">
+            Real projects
+          </h2>
+          <p class="text-[#94524a] text-lg">
+            A few examples of websites I’ve built for real businesses.
+          </p>
+        </div>
+
+        <button
+          id="toggle-projects"
+          type="button"
+          aria-expanded="false"
+          aria-controls="projects-content"
+          class="inline-flex items-center justify-center self-start md:self-auto bg-[#c94277] text-white px-5 py-3 rounded-xl font-semibold hover:opacity-90 transition"
+        >
+          Show Projects
+        </button>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-8">
+      <div
+        id="projects-content"
+        aria-hidden="true"
+        class="grid md:grid-cols-2 gap-8 overflow-hidden transition-all duration-500 ease-in-out opacity-0"
+        style="max-height: 0px;"
+      >
         <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-[#a27e6f]/40">
           <img
             src="images/africanqueenpage.png"
@@ -236,7 +254,7 @@
           Process
         </p>
         <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#2f0a28]">
-          A simple process from start to launch
+          A simple process from start to launchhttp://127.0.0.1:5500/index.html?#services
         </h2>
       </div>
 
@@ -319,5 +337,38 @@
     </div>
   </footer>
 
+  <script>
+    const toggleButton = document.getElementById("toggle-projects");
+    const projectsContent = document.getElementById("projects-content");
+
+    if (toggleButton && projectsContent) {
+      toggleButton.addEventListener("click", () => {
+        const expanded = toggleButton.getAttribute("aria-expanded") === "true";
+
+        if (expanded) {
+          projectsContent.style.maxHeight = "0px";
+          projectsContent.classList.add("opacity-0");
+          projectsContent.classList.remove("opacity-100");
+          projectsContent.setAttribute("aria-hidden", "true");
+          toggleButton.textContent = "Show Projects";
+          toggleButton.setAttribute("aria-expanded", "false");
+        } else {
+          projectsContent.style.maxHeight = projectsContent.scrollHeight + "px";
+          projectsContent.classList.remove("opacity-0");
+          projectsContent.classList.add("opacity-100");
+          projectsContent.setAttribute("aria-hidden", "false");
+          toggleButton.textContent = "Hide Projects";
+          toggleButton.setAttribute("aria-expanded", "true");
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        const expanded = toggleButton.getAttribute("aria-expanded") === "true";
+        if (expanded) {
+          projectsContent.style.maxHeight = projectsContent.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
 </body>
 </html>
