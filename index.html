@@ -14,6 +14,7 @@
     .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid rgba(162, 126, 111, 0.2); }
     .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(47, 10, 40, 0.15); border-color: #c94277; }
   </style>
+  <link rel="icon" type="image/png" href="images/favicon.png?v=2" />
 </head>
 
 <body class="bg-[#f6f1ed] text-[#2f0a28]">
@@ -38,23 +39,32 @@
     </div>
   </nav>
 
-  <section class="relative bg-[#cadbc0] pt-24 pb-32 px-6 border-b border-[#a27e6f]/20 overflow-hidden">
-    <div class="max-w-7xl mx-auto">
+    <section class="relative min-h-[80vh] flex items-center overflow-hidden border-b border-[#a27e6f]/20">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=2000" 
+        alt="Modern bright office workspace" 
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#cadbc0]/95 via-[#cadbc0]/80 to-transparent"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 py-24 relative z-10">
       <div class="max-w-3xl">
-        <span class="inline-block mb-6 text-xs font-bold uppercase tracking-[0.3em] text-[#94524a] bg-white/40 px-4 py-1.5 rounded-full">
+        <span class="inline-block mb-6 text-xs font-bold uppercase tracking-[0.3em] text-[#94524a] bg-white/60 px-4 py-1.5 rounded-full">
           Websites for Small Businesses
         </span>
-        <h1 class="text-5xl md:text-8xl font-bold leading-[1] tracking-tight mb-8">
+        <h1 class="text-5xl md:text-8xl font-bold leading-[1] tracking-tight mb-8 text-[#2f0a28]">
           Clean, modern websites that <span class="text-[#c94277]">stand out.</span>
         </h1>
-        <p class="text-lg md:text-2xl text-[#94524a] leading-relaxed mb-10 max-w-2xl">
+        <p class="text-lg md:text-2xl text-[#94524a] leading-relaxed mb-10 max-w-2xl font-medium">
           ClearPath Web Development creates professional websites for businesses that want to build trust, attract customers, and grow online.
         </p>
         <div class="flex flex-wrap gap-5">
-          <a href="#contact" class="bg-[#c94277] text-white px-10 py-4 rounded-full font-bold shadow-xl hover:bg-[#2f0a28] transition-all">
+          <a href="#contact" class="bg-[#c94277] text-white px-10 py-4 rounded-full font-bold shadow-xl hover:bg-[#2f0a28] transition-all transform hover:-translate-y-1">
             Request a Website
           </a>
-          <a href="#projects" class="border-2 border-[#94524a] text-[#2f0a28] px-10 py-4 rounded-full font-bold hover:bg-white/40 transition">
+          <a href="#projects" class="bg-white/50 backdrop-blur-sm border-2 border-[#94524a] text-[#2f0a28] px-10 py-4 rounded-full font-bold hover:bg-white/80 transition-all transform hover:-translate-y-1">
             View My Work
           </a>
         </div>
