@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClearPath Web Development | Client Intake Form</title>
+  <meta
+    name="description"
+    content="Client intake form for ClearPath Web Development landing page projects."
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .glass { background: rgba(202, 219, 192, 0.9); backdrop-filter: blur(12px); }
+    .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid rgba(162, 126, 111, 0.2); }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(47, 10, 40, 0.15); border-color: #c94277; }
+
+    #back-to-top { transition: all 0.3s ease; opacity: 0; visibility: hidden; }
+    #back-to-top.show { opacity: 1; visibility: visible; }
+
+    #mobile-menu { transition: all 0.3s ease-in-out; }
+
+    input[type="checkbox"], input[type="radio"] {
+      accent-color: #c94277;
+    }
+  </style>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png?v=2" />
+</head>
+
+<body class="bg-[#f6f1ed] text-[#2f0a28] relative">
+
+  <button id="back-to-top" aria-label="Back to top" class="fixed bottom-8 right-6 z-[60] bg-[#c94277] text-white p-4 rounded-full shadow-2xl hover:bg-[#2f0a28] active:scale-90 transition-all">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <div class="bg-[#c94277] text-white py-2.5 px-6 text-center text-sm font-bold tracking-wide">
+    Welcome to the next step. Please complete this intake form so I can begin building your landing page.
+  </div>
+
+  <nav class="sticky top-0 z-50 border-b border-[#a27e6f]/20 glass">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="../index.html" class="text-xl font-bold tracking-tighter uppercase text-[#2f0a28]">
+        ClearPath<span class="text-[#c94277]">.</span>
+      </a>
+
+      <div class="hidden md:flex items-center space-x-8 text-xs font-bold uppercase tracking-[0.15em]">
+        <a href="#overview" class="hover:text-[#c94277] transition">Overview</a>
+        <a href="#what-youll-need" class="hover:text-[#c94277] transition">Checklist</a>
+        <a href="#intake-form" class="bg-[#2f0a28] text-white px-6 py-2.5 rounded-full hover:bg-[#c94277] transition">Fill Out Form</a>
+      </div>
+
+      <button id="menu-toggle" class="md:hidden text-[#2f0a28] focus:outline-none" aria-label="Toggle menu">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-[#f6f1ed] border-b border-[#a27e6f]/20 px-6 py-8 space-y-6 text-center font-bold uppercase tracking-widest text-sm">
+      <a href="#overview" class="block hover:text-[#c94277]">Overview</a>
+      <a href="#what-youll-need" class="block hover:text-[#c94277]">Checklist</a>
+      <a href="#intake-form" class="block bg-[#c94277] text-white py-4 rounded-full mx-4">Fill Out Form</a>
+    </div>
+  </nav>
+
+  <section id="overview" class="relative min-h-[50vh] md:min-h-[60vh] flex items-center overflow-hidden border-b border-[#a27e6f]/20 bg-[#cadbc0]/40">
+    <div class="max-w-7xl mx-auto px-6 py-16 md:py-24 relative z-10">
+      <div class="max-w-3xl">
+        <span class="inline-block mb-6 text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-[#94524a] bg-white/70 px-4 py-1.5 rounded-full">
+          Client Intake Form
+        </span>
+        <h1 class="text-4xl md:text-7xl font-bold leading-[1.1] md:leading-[1] tracking-tight mb-8 text-[#2f0a28]">
+          Let’s gather what I need to bring your <span class="text-[#c94277]">vision to life.</span>
+        </h1>
+        <p class="text-base md:text-2xl text-[#94524a] leading-relaxed mb-10 max-w-2xl font-medium">
+          This form helps me understand your business, your goals, and the content needed for your landing page. The more detail you provide, the smoother and faster the process will be.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 md:gap-5">
+          <a href="#intake-form" class="text-center bg-[#c94277] text-white px-10 py-4 rounded-full font-bold shadow-xl hover:bg-[#2f0a28] transition-all transform hover:-translate-y-1">
+            Start Intake Form
+          </a>
+          <a href="../index.html" class="text-center bg-white/70 border-2 border-[#94524a] text-[#2f0a28] px-10 py-4 rounded-full font-bold hover:bg-white transition-all transform hover:-translate-y-1">
+            Back to Main Site
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="what-youll-need" class="py-20 md:py-32 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-3xl mb-12 md:mb-20">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">Before you begin</h2>
+        <p class="text-[#94524a] text-lg leading-relaxed">
+          Having these ready will make your intake easier and help keep your project moving.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] card-hover">
+          <h3 class="text-2xl font-bold mb-4 text-[#2f0a28]">Business Details</h3>
+          <p class="text-[#94524a] leading-relaxed">
+            Your business name, what you offer, contact information, service area, and anything customers should know right away.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] card-hover">
+          <h3 class="text-2xl font-bold mb-4 text-[#2f0a28]">Brand Assets</h3>
+          <p class="text-[#94524a] leading-relaxed">
+            Your logo, photos, social media links, color preferences, and any examples of websites you like.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] card-hover">
+          <h3 class="text-2xl font-bold mb-4 text-[#2f0a28]">Project Direction</h3>
+          <p class="text-[#94524a] leading-relaxed">
+            The goal of your page, the sections you want included, and whether you need a form, map, gallery, FAQ, or social links.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 md:py-24 px-6 bg-[#cadbc0]/30">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white/70 p-8 rounded-3xl border border-[#a27e6f]/20">
+          <h3 class="font-bold text-lg mb-3">Step 1</h3>
+          <p class="text-sm text-[#94524a]">Complete the form with as much detail as possible.</p>
+        </div>
+        <div class="bg-white/70 p-8 rounded-3xl border border-[#a27e6f]/20">
+          <h3 class="font-bold text-lg mb-3">Step 2</h3>
+          <p class="text-sm text-[#94524a]">I review your answers and organize your page structure.</p>
+        </div>
+        <div class="bg-white/70 p-8 rounded-3xl border border-[#a27e6f]/20">
+          <h3 class="font-bold text-lg mb-3">Step 3</h3>
+          <p class="text-sm text-[#94524a]">I begin building your landing page based on your content and goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="intake-form" class="py-20 md:py-32 px-6 bg-[#2f0a28]">
+    <div class="max-w-5xl mx-auto bg-[#cadbc0] rounded-[2rem] md:rounded-[3rem] overflow-hidden flex flex-col lg:flex-row">
+      <div class="p-8 md:p-12 lg:w-2/5">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#2f0a28]">Project Intake</h2>
+        <p class="text-[#94524a] text-lg leading-relaxed mb-8">
+          This form is for clients who have already secured their project. Please be as detailed as possible so I can build a landing page that fits your business clearly and professionally.
+        </p>
+
+        <div class="space-y-4">
+          <div class="flex items-center gap-4 bg-white/40 p-4 rounded-2xl">
+            <div class="w-2 h-2 rounded-full bg-[#c94277]"></div>
+            <p class="text-sm font-bold text-[#2f0a28]">Clear communication</p>
+          </div>
+          <div class="flex items-center gap-4 bg-white/40 p-4 rounded-2xl">
+            <div class="w-2 h-2 rounded-full bg-[#c94277]"></div>
+            <p class="text-sm font-bold text-[#2f0a28]">A smoother development process</p>
+          </div>
+          <div class="flex items-center gap-4 bg-white/40 p-4 rounded-2xl">
+            <div class="w-2 h-2 rounded-full bg-[#c94277]"></div>
+            <p class="text-sm font-bold text-[#2f0a28]">A landing page shaped around your goals</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-8 md:p-12 lg:w-3/5 bg-white relative">
+        <div id="success-message" class="hidden absolute inset-0 bg-white z-20 flex flex-col items-center justify-center p-8 text-center">
+          <div class="w-20 h-20 bg-[#cadbc0] rounded-full flex items-center justify-center mb-6">
+            <svg class="w-10 h-10 text-[#2f0a28]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-[#2f0a28] mb-2">Intake Submitted!</h3>
+          <p class="text-[#94524a]">
+            Thank you. I received your project details and will review everything before moving forward.
+          </p>
+          <button onclick="window.location.reload()" class="mt-8 text-sm font-bold text-[#c94277] uppercase tracking-widest hover:underline">
+            Submit another response
+          </button>
+        </div>
+
+        <form name="landing-page-intake" method="POST" netlify data-netlify="true" class="space-y-8">
+          <input type="hidden" name="form-name" value="landing-page-intake" />
+
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-[#2f0a28]">Basic Information</h3>
+            <div class="space-y-4">
+              <input type="text" name="full_name" placeholder="Your full name" required class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none">
+              <input type="email" name="email" placeholder="Best email address" required class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none">
+              <input type="tel" name="phone" placeholder="Phone number" class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none">
+              <input type="text" name="business_name" placeholder="Business name" required class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none">
+              <input type="text" name="business_location" placeholder="Business location or service area" class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none">
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-[#2f0a28]">Project Goal</h3>
+            <div class="space-y-4">
+              <label class="block text-sm font-bold text-[#2f0a28] mb-2">What type of landing page do you need?</label>
+              <select name="page_type" required class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none text-[#2f0a28]">
+                <option value="" disabled selected>Select one</option>
+                <option value="business-overview">Business overview</option>
+                <option value="services-page">Services page</option>
+                <option value="lead-generation">Lead generation page</option>
+                <option value="estimate-request">Estimate or quote request page</option>
+                <option value="promotion">Promotional page</option>
+                <option value="other">Other</option>
+              </select>
+
+              <textarea name="business_description" rows="5" placeholder="What does your business do? Please describe your business in your own words." required class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none"></textarea>
+
+              <textarea name="page_goal" rows="4" placeholder="What is the main goal of this page? For example: get calls, generate estimate requests, show services, build trust, promote an offer, etc." required class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none"></textarea>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-[#2f0a28]">Content and Branding</h3>
+            <div class="space-y-6">
+              <div>
+                <p class="text-sm font-bold text-[#2f0a28] mb-3">Do you have a logo?</p>
+                <div class="space-y-3 text-[#94524a]">
+                  <label class="flex items-center gap-3">
+                    <input type="radio" name="has_logo" value="yes-i-will-provide-it" required>
+                    <span>Yes, I will provide it</span>
+                  </label>
+                  <label class="flex items-center gap-3">
+                    <input type="radio" name="has_logo" value="no-use-text-only">
+                    <span>No, please use text only for now</span>
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-sm font-bold text-[#2f0a28] mb-3">Do you have photos to include?</p>
+                <div class="space-y-3 text-[#94524a]">
+                  <label class="flex items-center gap-3">
+                    <input type="radio" name="has_images" value="yes-i-will-provide-images" required>
+                    <span>Yes, I will provide images</span>
+                  </label>
+                  <label class="flex items-center gap-3">
+                    <input type="radio" name="has_images" value="no-use-stock-images-if-needed">
+                    <span>No, use stock images if needed</span>
+                  </label>
+                </div>
+              </div>
+
+              <textarea name="brand_style" rows="4" placeholder="Do you have brand colors, style preferences, or a general look you want? If yes, describe them here." class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none"></textarea>
+
+              <textarea name="inspiration" rows="4" placeholder="Share any websites you like or examples you want me to reference." class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none"></textarea>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-[#2f0a28]">Sections to Include</h3>
+            <p class="text-sm text-[#94524a] mb-4">Select all sections you want included on your landing page.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[#94524a]">
+              <label class="flex items-center gap-3 bg-[#f6f1ed] p-4 rounded-2xl">
+                <input type="checkbox" name="sections[]" value="hero-section">
+                <span>Hero section</span>
+              </label>
+              <label class="flex items-center gap-3 bg-[#f6f1ed] p-4 rounded-2xl">
+                <input type="checkbox" name="sections[]" value="about-section">
+                <span>About section</span>
+              </label>
+              <label class="flex items-center gap-3 bg-[#f6f1ed] p-4 rounded-2xl">
+                <input type="checkbox" name="sections[]" value="services">
+                <span>Services</span>
+              </label>
+              <label class="flex items-center gap-3 bg-[#f6f1ed] p-4 rounded-2xl">
+                <input type="checkbox" name="sections[]" value="gallery">
+                <span>Gallery</span>
+              </label>
+              <label class="flex items-center gap-3 bg-[#f6f1ed] p-4 rounded-2xl">
+                <input type="checkbox" name="sections[]" value="faq">
+                <span>FAQ</span>
+              </label>
+              <label class="flex items-center gap-3 bg-[#f6f1ed] p-4 rounded-2xl">
+                <input type="checkbox" name="sections[]" value="contact-form">
+                <span>Contact form</span>
+              </label>
+              <label class="flex items-center gap-3 bg-[#f6f1ed] p-4 rounded-2xl">
+                <input type="checkbox" name="sections[]" value="map">
+                <span>Map</span>
+              </label>
+              <label class="flex items-center gap-3 bg-[#f6f1ed] p-4 rounded-2xl">
+                <input type="checkbox" name="sections[]" value="social-media-links">
+                <span>Social media links</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-[#2f0a28]">Contact Information for the Page</h3>
+            <div class="space-y-4">
+              <input type="text" name="public_phone" placeholder="Business phone number to display" class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none">
+              <input type="email" name="public_email" placeholder="Business email to display" class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none">
+              <input type="text" name="address" placeholder="Business address (if you want it shown)" class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none">
+              <input type="text" name="facebook_link" placeholder="Facebook link" class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none">
+              <input type="text" name="instagram_link" placeholder="Instagram link" class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none">
+              <input type="text" name="other_socials" placeholder="Other social media links" class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none">
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-[#2f0a28]">Features</h3>
+            <div class="space-y-6">
+              <div>
+                <p class="text-sm font-bold text-[#2f0a28] mb-3">Do you need a contact or lead form on the page?</p>
+                <div class="space-y-3 text-[#94524a]">
+                  <label class="flex items-center gap-3">
+                    <input type="radio" name="needs_form" value="yes" required>
+                    <span>Yes</span>
+                  </label>
+                  <label class="flex items-center gap-3">
+                    <input type="radio" name="needs_form" value="no">
+                    <span>No</span>
+                  </label>
+                </div>
+              </div>
+
+              <textarea name="form_fields" rows="4" placeholder="If you need a form, what fields do you want on it? Example: name, phone number, email, service needed, message, file upload, etc." class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none"></textarea>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-[#2f0a28]">Final Notes</h3>
+            <div class="space-y-4">
+              <textarea name="extra_notes" rows="5" placeholder="Anything else you want me to know about your business, your goals, or your landing page?" class="w-full p-4 rounded-2xl bg-[#f6f1ed] border-none focus:ring-2 focus:ring-[#c94277] outline-none"></textarea>
+
+              <div class="bg-[#f6f1ed] rounded-2xl p-5 border border-[#a27e6f]/10">
+                <p class="text-sm font-bold text-[#2f0a28] mb-3">Please confirm:</p>
+                <label class="flex items-start gap-3 text-[#94524a]">
+                  <input type="checkbox" name="scope_confirmation" value="client-understands-single-landing-page" required class="mt-1">
+                  <span>I understand this project is for a single landing page unless otherwise discussed.</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="w-full bg-[#c94277] text-white font-bold py-4 rounded-2xl hover:bg-[#2f0a28] transition shadow-lg">
+            Submit Intake Form
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12 px-6 text-center text-xs font-bold uppercase tracking-[0.3em] text-[#94524a] bg-[#f6f1ed]">
+    © 2026 ClearPath Web Development. All rights reserved.
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    const topBtn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        topBtn.classList.add('show');
+      } else {
+        topBtn.classList.remove('show');
+      }
+    });
+
+    topBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const intakeForm = document.querySelector('form[name="landing-page-intake"]');
+    const successMsg = document.getElementById('success-message');
+
+    intakeForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const formData = new FormData(intakeForm);
+
+      fetch(window.location.pathname, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+      .then(() => {
+        successMsg.classList.remove('hidden');
+        intakeForm.reset();
+      })
+      .catch((error) => alert("Form submission error: " + error));
+    });
+  </script>
+</body>
+</html>
