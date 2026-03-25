@@ -18,7 +18,7 @@
       background-color: #f6f1ed;
       background-image: 
         radial-gradient(at 0% 0%, rgba(202, 219, 192, 0.4) 0px, transparent 50%),
-        radial-gradient(at 100% 0%, rgba(201, 66, 119, 0.05) 0px, transparent 50%);
+        radial-gradient(at 100% 0%, rgba(201, 66, 119, 0.1) 0px, transparent 50%);
     }
 
     .faq-item[open] summary span { transform: rotate(45deg); color: #c94277; }
@@ -32,31 +32,30 @@
 <body class="mesh-gradient text-[#2f0a28] selection:bg-[#c94277] selection:text-white">
 
   <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-[#a27e6f]/10">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-[#2f0a28]">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold tracking-tighter uppercase text-[#2f0a28]">
         ClearPath<span class="text-[#c94277]">.</span>
       </a>
 
       <div class="flex items-center gap-4">
-        <a href="index.html" class="hidden sm:inline-block text-sm font-bold text-[#94524a] hover:text-[#c94277] transition">
+        <a href="index.html" class="hidden sm:inline-block text-xs font-bold uppercase tracking-widest text-[#94524a] hover:text-[#c94277] transition">
           Back to Home
         </a>
-        <a href="index.html#contact" class="bg-[#2f0a28] text-white px-6 py-2.5 rounded-full text-sm font-bold hover:scale-105 active:scale-95 transition-all shadow-lg shadow-[#2f0a28]/10">
+        <a href="index.html#contact" class="bg-[#c94277] text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-[#2f0a28] transition-all shadow-lg shadow-[#c94277]/10">
           Get Started
         </a>
       </div>
     </div>
   </nav>
 
-  <header class="relative pt-20 pb-16 px-6 overflow-hidden">
-    <div class="max-w-4xl mx-auto text-center relative z-10">
-      <span class="inline-flex items-center gap-2 mb-6 text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#94524a] bg-[#cadbc0]/30 border border-[#cadbc0] px-4 py-2 rounded-full">
-        <span class="w-2 h-2 rounded-full bg-[#c94277] animate-pulse"></span>
-        Support Center
+  <header class="relative pt-20 pb-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="inline-block mb-6 text-[10px] font-extrabold uppercase tracking-[0.3em] text-[#94524a] bg-white/50 border border-[#a27e6f]/10 px-4 py-2 rounded-full">
+        Support & Guidance
       </span>
 
       <h1 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight">
-        Common <span class="text-[#c94277]">Questions.</span>
+        Frequently Asked <span class="text-[#c94277]">Questions.</span>
       </h1>
 
       <p class="text-[#94524a] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto font-medium">
@@ -65,14 +64,19 @@
     </div>
   </header>
 
-  <section class="pb-12 px-6">
-    <div class="max-w-4xl mx-auto">
-      <div class="bg-white rounded-[2.5rem] shadow-sm border border-[#a27e6f]/10 p-8 md:p-12 relative overflow-hidden group">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-[#cadbc0]/20 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
-        <h2 class="text-2xl md:text-3xl font-extrabold mb-6 relative z-10 italic">A quick note before you dive in</h2>
-        <p class="text-[#94524a] leading-relaxed text-lg relative z-10">
-          Not every business needs a large, expensive website right away. Sometimes a strong landing page is enough to help people understand what you do, trust your business, and reach out. The right option depends on your goals—this FAQ helps you understand the difference.
-        </p>
+  <section class="py-12 px-6">
+    <div class="max-w-4xl mx-auto border-y border-[#a27e6f]/15 py-16">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div class="md:col-span-1">
+          <h2 class="text-xs font-black uppercase tracking-[0.3em] text-[#c94277]">The Philosophy</h2>
+        </div>
+        <div class="md:col-span-2">
+          <p class="text-[#94524a] leading-relaxed text-lg md:text-xl">
+            Not every business needs a large, expensive website right away. Sometimes a strong landing page is enough to help people understand what you do, trust your business, and reach out. 
+            <br><br>
+            <span class="text-[#2f0a28] font-bold">The right option depends on your goals</span>, and this FAQ is meant to help you understand the difference so you can make the best decision for your business.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -80,108 +84,88 @@
   <section class="py-12 px-6">
     <div class="max-w-3xl mx-auto space-y-4">
 
-      <details class="faq-item group bg-white rounded-2xl border border-[#a27e6f]/10 shadow-sm overflow-hidden transition-all">
+      <details class="faq-item group bg-white/50 rounded-2xl border border-[#a27e6f]/10 hover:bg-white transition-all">
         <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
           <h3 class="font-extrabold text-xl pr-4">What is a landing page?</h3>
           <span class="text-2xl font-light transition-transform duration-300">＋</span>
         </summary>
-        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-gray-50 pt-4">
+        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-[#a27e6f]/5 pt-4">
           A landing page is a single page website designed to present your business clearly in one place. It usually includes your main message, services, contact information, and a call to action. It is a strong option for businesses that want to get online quickly and professionally without needing multiple pages right away.
         </div>
       </details>
 
-      <details class="faq-item group bg-white rounded-2xl border border-[#a27e6f]/10 shadow-sm overflow-hidden transition-all">
+      <details class="faq-item group bg-white/50 rounded-2xl border border-[#a27e6f]/10 hover:bg-white transition-all">
         <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
           <h3 class="font-extrabold text-xl pr-4">What is the difference between a landing page and a full website?</h3>
           <span class="text-2xl font-light transition-transform duration-300">＋</span>
         </summary>
-        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-gray-50 pt-4">
-          A landing page keeps everything on one page, which makes it simple and direct. A full website includes multiple pages, such as Home, About, Services, Contact, and more. If your goal is to get something polished online quickly, a landing page can be a smart starting point. If your business needs more depth, more content, or a broader online presence, a full website is usually the better fit.
+        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-[#a27e6f]/5 pt-4">
+          A landing page keeps everything on one page, which makes it simple and direct. A full website includes multiple pages, such as Home, About, Services, Contact, and more. If your goal is to get something polished online quickly, a landing page can be a smart starting point.
         </div>
       </details>
 
-      <details class="faq-item group bg-white rounded-2xl border border-[#a27e6f]/10 shadow-sm overflow-hidden transition-all">
+      <details class="faq-item group bg-white/50 rounded-2xl border border-[#a27e6f]/10 hover:bg-white transition-all">
         <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
-          <h3 class="font-extrabold text-xl pr-4">How do I know which option is right for me?</h3>
+          <h3 class="font-extrabold text-xl pr-4">Why does e-commerce cost more?</h3>
           <span class="text-2xl font-light transition-transform duration-300">＋</span>
         </summary>
-        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-gray-50 pt-4">
-          If you mainly need to explain what you do, show a few services, and make it easy for people to contact you, a landing page is often enough. If you want separate pages for different services, more room for content, stronger long-term growth, or a more complete brand presence, a full website makes more sense.
+        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-[#a27e6f]/5 pt-4">
+          E-commerce websites require more setup and more responsibility on the development side. They often include product or service listings, payment processing, checkout flows, customer actions, and testing to make sure everything works smoothly.
         </div>
       </details>
 
-      <details class="faq-item group bg-white rounded-2xl border border-[#a27e6f]/10 shadow-sm overflow-hidden transition-all">
-        <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
-          <h3 class="font-extrabold text-xl pr-4">Why does e-commerce cost more than a full website?</h3>
-          <span class="text-2xl font-light transition-transform duration-300">＋</span>
-        </summary>
-        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-gray-50 pt-4">
-          E-commerce websites require more setup and more responsibility. They include product listings, payment processing, checkout flows, customer actions, and rigorous testing. An e-commerce website is both informational and functional, which is why it takes more time to build.
-        </div>
-      </details>
-
-      <details class="faq-item group bg-white rounded-2xl border border-[#a27e6f]/10 shadow-sm overflow-hidden transition-all">
+      <details class="faq-item group bg-white/50 rounded-2xl border border-[#a27e6f]/10 hover:bg-white transition-all">
         <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
           <h3 class="font-extrabold text-xl pr-4">What is the payment plan?</h3>
           <span class="text-2xl font-light transition-transform duration-300">＋</span>
         </summary>
-        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-gray-50 pt-4">
+        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-[#a27e6f]/5 pt-4">
           The payment plan is a lower upfront option for clients who want a full website without paying the full cost all at once. It starts with a down payment, followed by monthly payments until the agreed total is paid off.
         </div>
       </details>
 
       <div class="pt-8 pb-4">
-        <h4 class="text-xs font-black uppercase tracking-[0.3em] text-[#c94277] mb-6">Timelines & Process</h4>
+        <h4 class="text-xs font-black uppercase tracking-[0.3em] text-[#c94277]">Timeline & Details</h4>
       </div>
 
-      <details class="faq-item group bg-white rounded-2xl border border-[#a27e6f]/10 shadow-sm overflow-hidden transition-all">
+      <details class="faq-item group bg-white/50 rounded-2xl border border-[#a27e6f]/10 hover:bg-white transition-all">
         <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
-          <h3 class="font-extrabold text-xl pr-4">How long does a project take?</h3>
+          <h3 class="font-extrabold text-xl pr-4">How long does each option take?</h3>
           <span class="text-2xl font-light transition-transform duration-300">＋</span>
         </summary>
-        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-gray-50 pt-4 space-y-4">
-          <p><strong>Landing Pages:</strong> 2 to 5 business days after receiving content.</p>
-          <p><strong>Full Websites:</strong> 1 to 3 weeks depending on complexity.</p>
-          <p><strong>E-commerce:</strong> 2 to 4 weeks or more depending on item count and setup.</p>
+        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-[#a27e6f]/5 pt-4 space-y-4">
+          <p><strong>Landing Page:</strong> 2 to 5 business days.</p>
+          <p><strong>Full Website:</strong> 1 to 3 weeks.</p>
+          <p><strong>E-commerce:</strong> 2 to 4 weeks or more.</p>
         </div>
       </details>
 
-      <details class="faq-item group bg-white rounded-2xl border border-[#a27e6f]/10 shadow-sm overflow-hidden transition-all">
+      <details class="faq-item group bg-white/50 rounded-2xl border border-[#a27e6f]/10 hover:bg-white transition-all">
         <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
           <h3 class="font-extrabold text-xl pr-4">Do I need to provide my own content?</h3>
           <span class="text-2xl font-light transition-transform duration-300">＋</span>
         </summary>
-        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-gray-50 pt-4">
-          If you have text, photos, or branding prepared, that helps speed things up. If not, I can still help structure the page and organize your content based on the information you provide. You do not need everything perfectly written to start.
+        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-[#a27e6f]/5 pt-4">
+          If you already have text, photos, or branding, that helps. If not, I can help structure the page and organize your content based on the information you provide. You do not need to have everything perfectly written before getting started.
         </div>
       </details>
 
-      <details class="faq-item group bg-white rounded-2xl border border-[#a27e6f]/10 shadow-sm overflow-hidden transition-all">
+      <details class="faq-item group bg-white/50 rounded-2xl border border-[#a27e6f]/10 hover:bg-white transition-all">
         <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
-          <h3 class="font-extrabold text-xl pr-4">Will my website work on mobile?</h3>
+          <h3 class="font-extrabold text-xl pr-4">Will it work on mobile?</h3>
           <span class="text-2xl font-light transition-transform duration-300">＋</span>
         </summary>
-        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-gray-50 pt-4">
-          Yes. Every website I build is responsive, meaning it will adjust for phones, tablets, and desktops. Most customers will see your site from their phone first, so this is non-negotiable.
+        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-[#a27e6f]/5 pt-4">
+          Yes. Every website I build is designed to be responsive, which means it will adjust for phones, tablets, and desktops.
         </div>
       </details>
 
-      <details class="faq-item group bg-white rounded-2xl border border-[#a27e6f]/10 shadow-sm overflow-hidden transition-all">
-        <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
-          <h3 class="font-extrabold text-xl pr-4">Can I upgrade later?</h3>
-          <span class="text-2xl font-light transition-transform duration-300">＋</span>
-        </summary>
-        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-gray-50 pt-4">
-          Absolutely. Starting with a landing page is a practical way to establish your online presence first and expand later as your business grows.
-        </div>
-      </details>
-
-      <details class="faq-item group bg-white rounded-2xl border border-[#a27e6f]/10 shadow-sm overflow-hidden transition-all">
+      <details class="faq-item group bg-white/50 rounded-2xl border border-[#a27e6f]/10 hover:bg-white transition-all">
         <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
           <h3 class="font-extrabold text-xl pr-4">How do I get started?</h3>
           <span class="text-2xl font-light transition-transform duration-300">＋</span>
         </summary>
-        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-gray-50 pt-4">
+        <div class="px-6 md:px-8 pb-8 text-[#94524a] leading-relaxed border-t border-[#a27e6f]/5 pt-4">
           Reach out through the contact form on the main site. Once confirmed, I will guide you through the next steps, including deposit details and the intake process.
         </div>
       </details>
@@ -189,30 +173,26 @@
     </div>
   </section>
 
-  <section class="py-24 px-6">
-    <div class="max-w-5xl mx-auto bg-[#2f0a28] rounded-[3rem] p-10 md:p-20 text-center relative overflow-hidden shadow-2xl">
-      <div class="absolute inset-0 bg-gradient-to-br from-[#c94277]/20 to-transparent"></div>
-      
-      <div class="relative z-10">
-        <h2 class="text-4xl md:text-6xl font-extrabold mb-8 text-white tracking-tight">
-          Let’s build something <span class="text-[#cadbc0]">clear.</span>
-        </h2>
-        <p class="text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
-          Whether it's a simple landing page or an advanced e-commerce setup, the goal is to make your business look professional and trust-worthy.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="index.html#pricing" class="hover-lift bg-white text-[#2f0a28] px-10 py-5 rounded-full font-extrabold hover:bg-[#cadbc0] transition shadow-xl">
-            View Pricing
-          </a>
-          <a href="index.html#contact" class="hover-lift bg-[#c94277] text-white px-10 py-5 rounded-full font-extrabold hover:bg-white hover:text-[#c94277] transition shadow-xl">
-            Request a Website
-          </a>
-        </div>
+  <section class="py-32 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight">
+        A clear website makes it easier for people to <span class="text-[#c94277]">trust your business.</span>
+      </h2>
+      <p class="text-[#94524a] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-12">
+        Whether you need a simple landing page, a full business website, or a more advanced online ordering setup, the goal is the same: to help you look professional.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-6">
+        <a href="index.html#pricing" class="hover-lift bg-[#2f0a28] text-white px-10 py-5 rounded-full font-extrabold hover:bg-[#c94277] transition shadow-xl shadow-[#2f0a28]/10">
+          View Pricing
+        </a>
+        <a href="index.html#contact" class="hover-lift border-2 border-[#c94277] text-[#c94277] px-10 py-5 rounded-full font-extrabold hover:bg-[#c94277] hover:text-white transition">
+          Request a Website
+        </a>
       </div>
     </div>
   </section>
 
-  <footer class="py-12 px-6 text-center text-[10px] font-black uppercase tracking-[0.4em] text-[#94524a]/60">
+  <footer class="py-12 border-t border-[#a27e6f]/10 px-6 text-center text-[10px] font-black uppercase tracking-[0.4em] text-[#94524a]/60">
     © 2026 ClearPath Web Development. All rights reserved.
   </footer>
 

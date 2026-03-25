@@ -218,14 +218,14 @@
         </button>
       </div>
 
-      <div id="projects-content" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 overflow-hidden transition-all duration-700 opacity-0 max-h-0">
+      <div id="projects-content" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         <div class="group">
           <div class="rounded-3xl overflow-hidden mb-6 border border-[#a27e6f]/20 shadow-sm group-hover:shadow-xl transition-all">
             <img src="images/africanqueenpage.png" alt="African Queen Kitchen" class="w-full">
           </div>
           <h3 class="text-xl font-bold mb-2 text-[#2f0a28]">African Queen Kitchen</h3>
           <p class="text-sm text-[#94524a] mb-4">Catering website built for a local Minneapolis business.</p>
-          <a href="https://african-queen-kitchen-e86e575bfdf8.herokuapp.com/" target="_blank" class="text-[#c94277] font-bold hover:underline">View Live Site →</a>
+          <a href="https://african-queen-kitchen-e86e575bfdf8.herokuapp.com/" target="_blank" class="inline-block py-2 text-[#c94277] font-bold hover:underline">View Live Site →</a>
         </div>
         <div class="group">
           <div class="rounded-3xl overflow-hidden mb-6 border border-[#a27e6f]/20 shadow-sm group-hover:shadow-xl transition-all">
@@ -233,7 +233,7 @@
           </div>
           <h3 class="text-xl font-bold mb-2 text-[#2f0a28]">Positive Energy Construction</h3>
           <p class="text-sm text-[#94524a] mb-4">Arlington, TX company website focused on clear services.</p>
-          <a href="https://positiveenergyconstruction.services/" target="_blank" class="text-[#c94277] font-bold hover:underline">View Live Site →</a>
+          <a href="https://positiveenergyconstruction.services/" target="_blank" class="inline-block py-2 text-[#c94277] font-bold hover:underline">View Live Site →</a>
         </div>
         <div class="group">
           <div class="rounded-3xl overflow-hidden mb-6 border border-[#a27e6f]/20 shadow-sm group-hover:shadow-xl transition-all">
@@ -241,7 +241,7 @@
           </div>
           <h3 class="text-xl font-bold mb-2 text-[#2f0a28]">Doers Estimate Request</h3>
           <p class="text-sm text-[#94524a] mb-4">Estimate request site for a local construction company.</p>
-          <a href="https://doers-estimate.netlify.app/" target="_blank" class="text-[#c94277] font-bold hover:underline">View Live Site →</a>
+          <a href="https://doers-estimate.netlify.app/" target="_blank" class="inline-block py-2 text-[#c94277] font-bold hover:underline">View Live Site →</a>
         </div>
       </div>
     </div>
@@ -332,14 +332,13 @@
     const projectsContainer = document.getElementById("projects-content");
     
     toggleBtn.addEventListener("click", () => {
-      const isHidden = projectsContainer.classList.contains("opacity-0");
-      if(isHidden) {
-        projectsContainer.classList.remove("opacity-0", "max-h-0");
-        projectsContainer.classList.add("opacity-100", "max-h-[3000px]");
+      const isHidden = projectsContainer.classList.contains("hidden");
+
+      if (isHidden) {
+        projectsContainer.classList.remove("hidden");
         toggleBtn.textContent = "Hide Projects";
       } else {
-        projectsContainer.classList.add("opacity-0", "max-h-0");
-        projectsContainer.classList.remove("opacity-100", "max-h-[3000px]");
+        projectsContainer.classList.add("hidden");
         toggleBtn.textContent = "Show Projects";
       }
     });
