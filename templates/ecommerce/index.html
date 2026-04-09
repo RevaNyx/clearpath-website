@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Little Nest | Curated Baby Essentials</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --mint: #cfe6da;
+      --blush: #efd8dd;
+      --sage: #b9c9b5;
+      --cream: #faf6f1;
+      --text: #4b4a47;
+    }
+    body {
+      font-family: 'Manrope', sans-serif;
+      color: var(--text);
+      background: 
+        radial-gradient(circle at 0% 0%, rgba(207,230,218,0.4) 0%, transparent 35%),
+        radial-gradient(circle at 100% 0%, rgba(239,216,221,0.3) 0%, transparent 35%),
+        var(--cream);
+    }
+    .serif { font-family: 'DM Serif Display', serif; }
+    
+    .nest-card {
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 2.5rem;
+      transition: all 0.4s ease;
+    }
+    .nest-card:hover {
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+
+  <nav class="sticky top-0 z-50 px-6 py-6 bg-[--cream]/80 backdrop-blur-md border-b border-black/5">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="#" class="text-xl font-bold tracking-[0.2em] uppercase text-[--sage] serif">Little Nest</a>
+      <div class="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.3em] font-bold opacity-60">
+        <a href="#shop" class="hover:text-[--sage] transition">Collections</a>
+        <a href="#featured" class="hover:text-[--sage] transition">Best Sellers</a>
+        <a href="#newsletter" class="hover:text-[--sage] transition">Join Nest</a>
+      </div>
+      <div class="flex items-center gap-6">
+        <button class="text-xs font-bold uppercase tracking-widest opacity-60">Cart (0)</button>
+        <a href="#shop" class="bg-[--sage] text-white px-6 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold">Shop Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="max-w-7xl mx-auto px-6 py-16 lg:py-28 grid lg:grid-cols-2 gap-16 items-center">
+      <div class="space-y-8">
+        <span class="inline-block text-[--sage] text-[10px] uppercase tracking-[0.4em] font-bold italic">— Welcome to the Nest</span>
+        <h1 class="text-7xl md:text-9xl serif leading-[0.85] tracking-tight">
+          Gentle care <br/> for <span class="italic">little</span> ones.
+        </h1>
+        <p class="max-w-md text-lg text-[#7a766f] leading-relaxed">
+          Thoughtfully curated essentials for the nursery and beyond. Organic fabrics, soft palettes, and parent-approved safety.
+        </p>
+        <div class="flex gap-6 items-center pt-4">
+          <a href="#shop" class="bg-[--text] text-white px-10 py-5 rounded-full text-[10px] uppercase tracking-[0.3em] font-bold">New Arrivals</a>
+          <a href="#story" class="text-xs uppercase tracking-widest font-bold border-b border-[--sage] pb-1">Our Story</a>
+        </div>
+      </div>
+      
+      <div class="relative aspect-[4/5] rounded-[4rem] overflow-hidden shadow-2xl">
+        <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1000&q=80" alt="Baby nursery" class="w-full h-full object-cover">
+        <div class="absolute bottom-10 right-10 left-10 p-8 nest-card">
+          <p class="serif text-3xl mb-2 italic">The Bundle Set</p>
+          <p class="text-[10px] uppercase tracking-widest opacity-60">Hand-picked for new arrivals</p>
+        </div>
+      </div>
+    </header>
+
+    <section id="shop" class="py-24 px-6 bg-white/30">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20 space-y-4">
+          <h2 class="text-5xl serif">Shop the Collections</h2>
+          <p class="text-[10px] uppercase tracking-[0.4em] opacity-40">Nurturing every stage of growth</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <a href="#" class="nest-card p-4 group">
+            <div class="rounded-[2rem] aspect-square overflow-hidden mb-6">
+              <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+            </div>
+            <div class="px-2 pb-4">
+              <h3 class="text-2xl serif mb-1">Organic Cotton</h3>
+              <p class="text-xs opacity-50 uppercase tracking-widest">Sleepwear & Basics</p>
+            </div>
+          </a>
+          
+          <a href="#" class="nest-card p-4 group md:-translate-y-8 border-[--blush]/20">
+            <div class="rounded-[2rem] aspect-square overflow-hidden mb-6">
+              <img src="https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+            </div>
+            <div class="px-2 pb-4">
+              <h3 class="text-2xl serif mb-1">Play & Growth</h3>
+              <p class="text-xs opacity-50 uppercase tracking-widest">Educational & Soft Toys</p>
+            </div>
+          </a>
+
+          <a href="#" class="nest-card p-4 group">
+            <div class="rounded-[2rem] aspect-square overflow-hidden mb-6">
+              <img src="https://images.unsplash.com/photo-1555181126-cf46a03827c0?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+            </div>
+            <div class="px-2 pb-4">
+              <h3 class="text-2xl serif mb-1">Nursery Decor</h3>
+              <p class="text-xs opacity-50 uppercase tracking-widest">Soft Furnishings</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="py-32 px-6">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+        <div class="md:col-span-4 flex justify-between items-end mb-8">
+          <h2 class="text-4xl serif">Weekly Favorites</h2>
+          <a href="#" class="text-xs font-bold uppercase tracking-widest border-b border-[--sage]">View All</a>
+        </div>
+
+        <div class="space-y-4 group">
+          <div class="aspect-square bg-white rounded-3xl overflow-hidden p-8 border border-black/5">
+            <img src="https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=400" class="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-sm">Natural Teether Set</h4>
+            <span class="text-xs opacity-50">$24.00</span>
+          </div>
+        </div>
+
+        <div class="space-y-4 group">
+          <div class="aspect-square bg-white rounded-3xl overflow-hidden p-8 border border-black/5">
+            <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=400" class="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-sm">Muslin Swaddle Duo</h4>
+            <span class="text-xs opacity-50">$32.00</span>
+          </div>
+        </div>
+
+        <div class="space-y-4 group">
+          <div class="aspect-square bg-white rounded-3xl overflow-hidden p-8 border border-black/5">
+            <img src="https://images.unsplash.com/photo-1519238359922-989348752efb?auto=format&fit=crop&w=400" class="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-sm">Hand-Knit Booties</h4>
+            <span class="text-xs opacity-50">$18.00</span>
+          </div>
+        </div>
+
+        <div class="space-y-4 group">
+          <div class="aspect-square bg-white rounded-3xl overflow-hidden p-8 border border-black/5">
+            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=400" class="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-sm">Wooden Milestone Blocks</h4>
+            <span class="text-xs opacity-50">$45.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="py-32 px-6">
+      <div class="max-w-4xl mx-auto nest-card p-8 md:p-20 text-center space-y-10 border-[--mint]/30">
+        <div class="space-y-4">
+          <h2 class="text-5xl serif">Join the Nest.</h2>
+          <p class="text-sm text-[#7a766f] max-w-sm mx-auto">Get 10% off your first gift and early access to our seasonal collections.</p>
+        </div>
+        
+        <form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+          <input type="email" placeholder="email address" class="flex-1 bg-white border border-black/5 rounded-full px-8 py-5 text-sm outline-none focus:border-[--sage] transition-all">
+          <button class="bg-[--text] text-white px-10 py-5 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-[--sage] transition-all">Subscribe</button>
+        </form>
+        
+        <p class="text-[9px] uppercase tracking-[0.3em] opacity-30">We promise only gentle emails.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-12 text-center border-t border-black/5">
+    <p class="text-[9px] uppercase tracking-[0.4em] opacity-40">Little Nest Baby Boutique • Since 2026 • San Francisco, CA</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Veloura Studio | Luxury Salon & Artistry</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&family=Playfair+Display:italic,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sage: #a8b8a3;
+      --cream: #f7f3ee;
+      --blush: #dcc7c4;
+      --teal: #214e52;
+      --gold: #b9975b;
+      --text: #2a2927;
+    }
+    body {
+      font-family: 'Manrope', sans-serif;
+      color: var(--text);
+      background-color: var(--cream);
+      background-image: 
+        radial-gradient(circle at 0% 0%, rgba(168,184,163,0.15) 0%, transparent 40%),
+        radial-gradient(circle at 100% 100%, rgba(220,199,196,0.2) 0%, transparent 40%);
+    }
+    .serif { font-family: 'Playfair Display', serif; }
+    .floating-accent {
+      border-left: 1px solid rgba(33, 78, 82, 0.15);
+      padding-left: 2rem;
+    }
+    .img-mask {
+      border-radius: 6rem 2rem 6rem 2rem;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <nav class="fixed top-0 w-full z-50 mix-blend-multiply px-6 py-8">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="#" class="text-xl font-bold tracking-[0.3em] uppercase text-[--teal] serif">Veloura</a>
+      <div class="hidden md:flex gap-12 text-[10px] uppercase tracking-[0.3em] font-bold opacity-60">
+        <a href="#about" class="hover:text-[--gold] transition">Studio</a>
+        <a href="#services" class="hover:text-[--gold] transition">Services</a>
+        <a href="#book" class="hover:text-[--gold] transition">Booking</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="min-h-screen flex items-center px-6 pt-24 pb-12">
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
+        <div class="lg:col-span-7 space-y-10">
+          <span class="inline-block text-[--gold] text-[10px] uppercase tracking-[0.5em] font-bold">The Art of Hair</span>
+          <h1 class="text-7xl md:text-9xl serif leading-[0.85] tracking-tight">
+            Soft luxury <br/> <span class="italic font-normal">reimagined.</span>
+          </h1>
+          <p class="max-w-md text-lg text-[#6d665f] leading-relaxed floating-accent">
+            A sanctuary of calm where modern technique meets refined artistry. Dedicated to lived-in color and precision styling.
+          </p>
+          <div class="flex gap-8 items-center pt-4">
+            <a href="#book" class="bg-[--teal] text-white px-10 py-5 rounded-full text-xs uppercase tracking-widest font-bold hover:bg-[--text] transition-colors">Book a Visit</a>
+            <a href="#services" class="text-xs uppercase tracking-widest font-bold border-b border-[--gold] pb-1">Our Services</a>
+          </div>
+        </div>
+        
+        <div class="lg:col-span-5 relative">
+          <div class="aspect-[3/4] img-mask overflow-hidden shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80" alt="Salon" class="w-full h-full object-cover">
+          </div>
+          <div class="absolute -bottom-8 -left-8 bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/20 max-w-[200px]">
+            <p class="serif italic text-2xl text-[--teal]">Peaceful</p>
+            <p class="text-[9px] uppercase tracking-widest opacity-60 mt-2">Atmosphere First</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="services" class="py-32 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+          <h2 class="text-5xl serif leading-tight">Elevated <br/> Offerings</h2>
+          <p class="max-w-xs text-sm text-[#6d665f] opacity-80 uppercase tracking-widest leading-loose">Carefully curated treatments for the modern individual.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="space-y-6 group">
+            <div class="aspect-[4/5] rounded-3xl overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="flex justify-between items-start pt-4">
+              <div>
+                <h3 class="text-2xl serif">Lived-in Color</h3>
+                <p class="text-xs opacity-50 mt-2 uppercase tracking-widest">Dimension & Gloss</p>
+              </div>
+              <span class="text-[--gold] serif italic">01</span>
+            </div>
+          </div>
+
+          <div class="space-y-6 group md:-translate-y-12">
+            <div class="aspect-[4/5] rounded-3xl overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="flex justify-between items-start pt-4">
+              <div>
+                <h3 class="text-2xl serif">Precision Cut</h3>
+                <p class="text-xs opacity-50 mt-2 uppercase tracking-widest">Modern silhouettes</p>
+              </div>
+              <span class="text-[--gold] serif italic">02</span>
+            </div>
+          </div>
+
+          <div class="space-y-6 group">
+            <div class="aspect-[4/5] rounded-3xl overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="flex justify-between items-start pt-4">
+              <div>
+                <h3 class="text-2xl serif">Ritual Care</h3>
+                <p class="text-xs opacity-50 mt-2 uppercase tracking-widest">Scalp & Health</p>
+              </div>
+              <span class="text-[--gold] serif italic">03</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-32 bg-[--sage]/10">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <p class="text-[--gold] text-[10px] uppercase tracking-[0.5em] font-bold mb-12">The Philosophy</p>
+        <h2 class="text-4xl md:text-6xl serif italic leading-snug">"Artistry is not just in the finish, but in the integrity of the hair itself."</h2>
+        <p class="mt-12 text-xs uppercase tracking-[0.3em] font-bold opacity-40">— Veloura Collective</p>
+      </div>
+    </section>
+
+    <section id="book" class="py-32 px-6">
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24">
+        <div class="space-y-8">
+          <h2 class="text-6xl serif">Secure a <br/> session.</h2>
+          <p class="text-[#6d665f] max-w-sm leading-loose">We prioritize quality over quantity, offering limited appointments daily to ensure absolute focus on your transformation.</p>
+          <div class="space-y-4 pt-8">
+            <div class="flex items-center gap-4 text-[10px] uppercase tracking-widest font-bold">
+              <span class="w-8 h-[1px] bg-[--gold]"></span> Studio Location
+            </div>
+            <p class="text-xl serif pl-12">West End Design District, TX</p>
+          </div>
+        </div>
+
+        <form class="space-y-10">
+          <div class="border-b border-black/10 py-4 group">
+            <label class="text-[9px] uppercase tracking-widest opacity-40 block mb-2 group-focus-within:text-[--teal] transition-colors">Full Name</label>
+            <input type="text" class="w-full bg-transparent outline-none text-lg serif placeholder:opacity-20" placeholder="Evelyn Thorne">
+          </div>
+          <div class="grid md:grid-cols-2 gap-10">
+            <div class="border-b border-black/10 py-4">
+              <label class="text-[9px] uppercase tracking-widest opacity-40 block mb-2">Service</label>
+              <select class="w-full bg-transparent outline-none text-lg serif">
+                <option>Balayage & Color</option>
+                <option>Cut & Styling</option>
+                <option>Restorative Ritual</option>
+              </select>
+            </div>
+            <div class="border-b border-black/10 py-4">
+              <label class="text-[9px] uppercase tracking-widest opacity-40 block mb-2">Timing</label>
+              <input type="text" placeholder="Preferred Week" class="w-full bg-transparent outline-none text-lg serif placeholder:opacity-20">
+            </div>
+          </div>
+          <button class="w-full bg-[--teal] text-white py-6 rounded-full font-bold uppercase text-[10px] tracking-[0.4em] hover:bg-[--text] transition-all">Submit Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-12 border-t border-black/5 text-center">
+    <p class="text-[9px] uppercase tracking-[0.5em] opacity-30">© 2026 Veloura Studio Collective</p>
+  </footer>
+
+</body>
+</html>

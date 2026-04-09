@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ironvale Builders | Architectural Excellence</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --onyx: #090a0c;
+      --hunter: #406450;
+      --mauve: #a96068;
+      --sand: #a99e60;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--onyx);
+      color: white;
+      overflow-x: hidden;
+    }
+    /* Subtle background grid */
+    .bg-dots {
+      background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    /* Floating accent glow */
+    .glow {
+      position: absolute;
+      width: 60vw;
+      height: 60vw;
+      background: radial-gradient(circle, rgba(64,100,80,0.1) 0%, transparent 70%);
+      top: -10vw;
+      right: -10vw;
+      z-index: -1;
+    }
+    .text-balance { text-wrap: balance; }
+  </style>
+</head>
+<body class="bg-dots">
+
+  <nav class="fixed top-0 w-full z-50 px-6 py-8 mix-blend-difference">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="#" class="text-xl font-extrabold tracking-tighter uppercase">Ironvale</a>
+      <div class="hidden md:flex gap-12 text-[10px] uppercase tracking-[0.3em] font-medium">
+        <a href="#services" class="hover:text-[--sand] transition">Services</a>
+        <a href="#projects" class="hover:text-[--sand] transition">Work</a>
+        <a href="#contact" class="hover:text-[--sand] transition">Inquiry</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="relative min-h-screen flex items-center px-6 pt-20">
+      <div class="glow"></div>
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 z-10">
+          <span class="inline-block px-4 py-1 border border-[--hunter] text-[--sand] text-[10px] uppercase tracking-[0.4em] mb-8 rounded-full">
+            Est. 2014
+          </span>
+          <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight leading-[0.85] mb-10 text-balance">
+            Architecture <br/> <span class="text-[--hunter]">defined</span> by <br/> precision.
+          </h1>
+          <p class="max-w-md text-white/50 text-lg leading-relaxed mb-12">
+            A boutique construction firm specializing in high-contrast modern builds and editorial-grade renovations.
+          </p>
+          <div class="flex gap-8 items-center">
+            <a href="#contact" class="bg-white text-black px-10 py-5 rounded-full font-bold text-sm hover:bg-[--sand] transition-colors">Start a Project</a>
+            <a href="#projects" class="text-sm font-bold border-b border-white/20 pb-1 hover:border-[--mauve] transition-all">View Portfolio</a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 relative">
+          <div class="aspect-[4/5] rounded-3xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80" alt="Modern House" class="w-full h-full object-cover">
+          </div>
+          <div class="absolute -bottom-6 -left-6 bg-[--onyx] border border-white/10 p-8 rounded-2xl max-w-[240px]">
+            <p class="text-[--sand] font-bold text-2xl mb-1">180+</p>
+            <p class="text-white/40 text-[10px] uppercase tracking-widest">Completed Structures</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="services" class="py-32 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-24 mb-24">
+          <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter">Elevated Building <br/> Solutions.</h2>
+          <p class="text-white/40 text-lg leading-relaxed">We don't just build walls; we curate environments. Our process is stripped of the typical construction friction, focusing on aesthetic integrity and structural longevity.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-1px bg-white/10">
+          <div class="bg-[--onyx] py-16 pr-12 group">
+            <span class="text-[--mauve] font-mono mb-6 block text-sm">01.</span>
+            <h3 class="text-2xl font-bold mb-4 group-hover:text-[--sand] transition-colors">Custom Residential</h3>
+            <p class="text-white/50 leading-relaxed">Ground-up builds that prioritize light, natural materials, and modern silhouettes.</p>
+          </div>
+          <div class="bg-[--onyx] py-16 px-12 group border-x border-white/5">
+            <span class="text-[--mauve] font-mono mb-6 block text-sm">02.</span>
+            <h3 class="text-2xl font-bold mb-4 group-hover:text-[--sand] transition-colors">Modern Retrofits</h3>
+            <p class="text-white/50 leading-relaxed">Preserving the soul of a structure while implementing 21st-century technology and flow.</p>
+          </div>
+          <div class="bg-[--onyx] py-16 pl-12 group">
+            <span class="text-[--mauve] font-mono mb-6 block text-sm">03.</span>
+            <h3 class="text-2xl font-bold mb-4 group-hover:text-[--sand] transition-colors">Interior Curation</h3>
+            <p class="text-white/50 leading-relaxed">Bespoke cabinetry and architectural details that define the luxury experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-32 px-6 bg-white/[0.02]">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-16">
+          <h2 class="text-4xl font-extrabold">Selected Works</h2>
+          <p class="text-[10px] uppercase tracking-widest text-white/40">2024—2026 Collection</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div class="md:col-span-8 group overflow-hidden rounded-3xl">
+            <div class="aspect-video relative">
+              <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div class="absolute bottom-8 left-8">
+                <p class="text-[--sand] text-xs font-bold uppercase tracking-tighter mb-1">Dallas, TX</p>
+                <h4 class="text-2xl font-bold">The Ironvale Estate</h4>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-4 group overflow-hidden rounded-3xl">
+            <div class="aspect-[3/4] relative">
+              <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div class="absolute bottom-8 left-8">
+                <p class="text-[--mauve] text-xs font-bold uppercase tracking-tighter mb-1">Austin, TX</p>
+                <h4 class="text-2xl font-bold">Glass Pavilion</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6">
+      <div class="max-w-5xl mx-auto grid lg:grid-cols-2 gap-20">
+        <div>
+          <h2 class="text-5xl font-extrabold tracking-tighter mb-8 text-[--sand]">Let's build <br/> something real.</h2>
+          <p class="text-white/50 text-lg mb-12">Currently accepting inquiries for Late 2026 project starts.</p>
+          
+          <div class="space-y-6">
+            <div class="border-l-2 border-[--hunter] pl-6">
+              <p class="text-[10px] uppercase text-white/40 tracking-widest mb-1">Inquiries</p>
+              <p class="text-xl">hello@ironvale.com</p>
+            </div>
+            <div class="border-l-2 border-[--mauve] pl-6">
+              <p class="text-[10px] uppercase text-white/40 tracking-widest mb-1">Studio</p>
+              <p class="text-xl">102 Main St, Design District</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="space-y-8">
+          <input type="text" placeholder="Full Name" class="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-[--sand] transition-colors">
+          <input type="email" placeholder="Email Address" class="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-[--sand] transition-colors">
+          <textarea placeholder="Project Brief" rows="4" class="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-[--sand] transition-colors"></textarea>
+          <button class="group flex items-center gap-4 text-sm font-bold uppercase tracking-widest">
+            Send Inquiry 
+            <span class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all">→</span>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-12 border-t border-white/5 text-center">
+    <p class="text-[9px] uppercase tracking-[0.5em] text-white/20">&copy; 2026 Ironvale Builders / All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

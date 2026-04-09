@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Your Project Type | ClearPath</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+    .card {
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+    }
+  </style>
+</head>
+<link rel="icon" type="image/png" href="images/favicon.png?v=2" />
+<body class="bg-[#f6f1ed] text-[#2f0a28]">
+
+    <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-[#a27e6f]/10">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-tighter uppercase text-[#2f0a28]">
+                ClearPath<span class="text-[#c94277]">.</span>
+            </a>
+
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="hidden sm:inline-block text-xs font-bold uppercase tracking-widest text-[#94524a] hover:text-[#c94277] transition">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+  </nav>
+
+  <section class="min-h-screen flex items-center px-6 py-20">
+    <div class="max-w-6xl mx-auto w-full text-center">
+
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
+        Let’s get your project started.
+      </h1>
+
+      <p class="text-[#94524a] text-lg md:text-xl max-w-2xl mx-auto mb-16">
+        Choose the option that best matches what you need. I’ll use your answers to plan your website the right way from the start.
+      </p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Landing Page -->
+        <a href="intakes/landing-page-intake.html" class="card bg-white rounded-3xl p-8 border border-[#a27e6f]/10">
+          <h3 class="text-2xl font-bold mb-4">Landing Page</h3>
+          <p class="text-[#94524a] text-sm leading-relaxed">
+            A single-page website focused on capturing leads or showcasing one main offer.
+          </p>
+        </a>
+
+        <!-- Full Website -->
+        <a href="intakes/full-website-intake.html" class="card bg-white rounded-3xl p-8 border border-[#a27e6f]/10">
+          <h3 class="text-2xl font-bold mb-4">Full Website</h3>
+          <p class="text-[#94524a] text-sm leading-relaxed">
+            A multi-page website built to fully represent your business, services, and brand.
+          </p>
+        </a>
+
+        <!-- Ecommerce -->
+        <a href="intakes/ecommerce-intake.html" class="card bg-white rounded-3xl p-8 border border-[#a27e6f]/10">
+          <h3 class="text-2xl font-bold mb-4">Ecommerce Store</h3>
+          <p class="text-[#94524a] text-sm leading-relaxed">
+            An online store where customers can browse products and complete purchases.
+          </p>
+        </a>
+
+        <!-- Redesign -->
+        <a href="intakes/redesign-intake.html" class="card bg-white rounded-3xl p-8 border border-[#a27e6f]/10">
+          <h3 class="text-2xl font-bold mb-4">Website Redesign</h3>
+          <p class="text-[#94524a] text-sm leading-relaxed">
+            Improve or rebuild your existing website so it better reflects your business and goals.
+          </p>
+        </a>
+
+      </div>
+
+      <div class="mt-20">
+        <a href="mailto:clearpathweb.dev@gmail.com" class="inline-block bg-[#c94277] text-white px-10 py-4 rounded-full font-bold hover:bg-[#2f0a28] transition">
+          Not sure? Email Me
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

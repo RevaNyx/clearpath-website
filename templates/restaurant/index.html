@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Noir Table | Fine Dining Restaurant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --midnight: #0b1320;
+      --burgundy: #4a1626;
+      --gold: #c6a96a;
+      --cream: #f7f3ec;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top right, rgba(111,29,54,0.15), transparent 40%),
+                  linear-gradient(180deg, #0b1320 0%, #07090d 100%);
+      color: var(--cream);
+      min-height: 100vh;
+    }
+    h1, h2, h3, .display-serif { font-family: 'Cormorant Garamond', serif; }
+
+    .gold-ring {
+      box-shadow: inset 0 0 0 1px rgba(198,169,106,0.2);
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), transparent);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-mask {
+      mask-image: radial-gradient(circle, black 50%, transparent 100%);
+    }
+
+    .hover-gold:hover {
+      border-color: var(--gold);
+      box-shadow: 0 0 30px rgba(198,169,106,0.1);
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+
+  <nav class="sticky top-0 z-50 flex justify-between items-center px-6 py-6 border-b border-white/5 bg-[#0b1320]/80 backdrop-blur-md">
+    <a href="#" class="text-xl tracking-[0.4em] uppercase display-serif font-bold">Noir Table</a>
+    <div class="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.3em] opacity-60 font-bold">
+      <a href="#about" class="hover:text-[--gold] transition">Philosophy</a>
+      <a href="#menu" class="hover:text-[--gold] transition">Menu</a>
+      <a href="#reserve" class="hover:text-[--gold] transition">Reservations</a>
+    </div>
+    <a href="#reserve" class="px-6 py-2 rounded-full border border-[--gold]/40 text-[10px] uppercase tracking-widest hover:bg-[--gold] hover:text-black transition-all">Book Now</a>
+  </nav>
+
+  <header class="max-w-7xl mx-auto px-6 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="space-y-8">
+      <span class="text-[--gold] text-[10px] uppercase tracking-[0.5em] font-bold block">Private Dining Experience</span>
+      <h1 class="text-7xl md:text-9xl leading-[0.85] font-medium tracking-tight">An <span class="italic text-[--gold]">evening</span> of nuance.</h1>
+      <p class="text-lg text-white/50 max-w-md leading-relaxed">A cinematic approach to fine dining. We blend deep atmosphere with architectural plating to create an exclusive world of flavor.</p>
+      <div class="flex items-center gap-6">
+        <a href="#menu" class="bg-[--gold] text-black px-8 py-4 rounded-full font-bold text-sm">The Menu</a>
+        <a href="#about" class="text-sm border-b border-white/20 pb-1">Our Story</a>
+      </div>
+    </div>
+    
+    <div class="relative gold-ring rounded-[3rem] aspect-[4/5] overflow-hidden group">
+      <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80" 
+           class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60 group-hover:scale-105 transition-transform duration-1000" alt="Restaurant">
+      <div class="absolute bottom-10 left-10 right-10 p-8 gold-ring rounded-2xl">
+         <h3 class="text-3xl display-serif mb-2">The Chef's Counter</h3>
+         <p class="text-sm opacity-60">Limited to twelve guests nightly for an intimate view of the craft.</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="py-24 border-y border-white/5 bg-white/[0.01]">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-16">
+      <div class="md:col-span-1">
+        <h2 class="text-4xl display-serif mb-4 italic">The Ritual</h2>
+        <div class="w-12 h-[1px] bg-[--gold] mb-6"></div>
+        <p class="text-white/40 leading-relaxed">Dining is more than consumption; it is a sequence of moments designed to be remembered.</p>
+      </div>
+      <div class="md:col-span-2 grid sm:grid-cols-2 gap-12">
+        <div class="space-y-4">
+          <h4 class="text-[--gold] uppercase text-[10px] tracking-widest font-bold">Atmosphere</h4>
+          <p class="text-white/70">A palette of midnight and burgundy paired with low-frequency jazz and candlelight.</p>
+        </div>
+        <div class="space-y-4">
+          <h4 class="text-[--gold] uppercase text-[10px] tracking-widest font-bold">Philosophy</h4>
+          <p class="text-white/70">Sourcing exclusively from the Atlantic coastline and heritage farms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="py-32 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-24 space-y-4">
+        <h2 class="text-6xl display-serif">The Tasting Series</h2>
+        <p class="text-[10px] uppercase tracking-[0.4em] opacity-40 italic">— Winter Selection 2026 —</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <article class="gold-ring rounded-[2.5rem] p-4 hover-gold transition-all duration-500">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600" class="rounded-[2rem] h-72 w-full object-cover mb-8" />
+          <div class="px-4 pb-6 space-y-4">
+            <span class="text-[10px] uppercase tracking-widest opacity-50 block">Prelude</span>
+            <h3 class="text-3xl display-serif">Glazed Atlantic Scallop</h3>
+            <p class="text-sm text-white/50 leading-relaxed">Served with parsnip silk and a reduction of toasted hazelnuts.</p>
+          </div>
+        </article>
+
+        <article class="gold-ring rounded-[2.5rem] p-4 lg:-translate-y-12 border border-[--burgundy]/30 hover-gold transition-all duration-500">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600" class="rounded-[2rem] h-80 w-full object-cover mb-8" />
+          <div class="px-4 pb-6 space-y-4">
+            <span class="text-[--gold] text-[10px] uppercase tracking-widest block font-bold">Signature</span>
+            <h3 class="text-3xl display-serif">Wagyu Ribeye</h3>
+            <p class="text-sm text-white/50 leading-relaxed">Smoked with cherry wood and glazed in a 48-hour bone marrow jus.</p>
+          </div>
+        </article>
+
+        <article class="gold-ring rounded-[2.5rem] p-4 hover-gold transition-all duration-500">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600" class="rounded-[2rem] h-72 w-full object-cover mb-8" />
+          <div class="px-4 pb-6 space-y-4">
+            <span class="text-[10px] uppercase tracking-widest opacity-50 block">Finale</span>
+            <h3 class="text-3xl display-serif">Bitter Chocolate</h3>
+            <p class="text-sm text-white/50 leading-relaxed">70% cacao with sea salt, olive oil, and gold-leaf honeycomb.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserve" class="py-32 px-6 bg-gradient-to-b from-transparent to-[--burgundy]/10">
+    <div class="max-w-4xl mx-auto gold-ring rounded-[3rem] p-8 md:p-16 text-center space-y-12">
+      <div class="space-y-4">
+        <h2 class="text-6xl display-serif">Join us tonight</h2>
+        <p class="text-white/40 tracking-widest text-[10px] uppercase">Strictly by reservation • Smart elegant attire requested</p>
+      </div>
+      
+      <form class="grid md:grid-cols-2 gap-x-12 gap-y-8 text-left">
+        <div class="border-b border-white/10 py-2">
+          <label class="text-[9px] uppercase tracking-widest opacity-40">Name</label>
+          <input type="text" class="w-full bg-transparent outline-none py-1 focus:text-[--gold]">
+        </div>
+        <div class="border-b border-white/10 py-2">
+          <label class="text-[9px] uppercase tracking-widest opacity-40">Guests</label>
+          <input type="number" class="w-full bg-transparent outline-none py-1 focus:text-[--gold]">
+        </div>
+        <div class="border-b border-white/10 py-2">
+          <label class="text-[9px] uppercase tracking-widest opacity-40">Date</label>
+          <input type="date" class="w-full bg-transparent outline-none py-1 focus:text-[--gold]">
+        </div>
+        <div class="border-b border-white/10 py-2">
+          <label class="text-[9px] uppercase tracking-widest opacity-40">Preferences</label>
+          <input type="text" class="w-full bg-transparent outline-none py-1 focus:text-[--gold]">
+        </div>
+        <button class="md:col-span-2 bg-white text-black py-5 rounded-full font-bold uppercase text-[11px] tracking-[0.3em] hover:bg-[--gold] transition-all">Check Availability</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-12 text-center border-t border-white/5">
+    <p class="text-[9px] uppercase tracking-[0.5em] opacity-20">Noir Table • Fine Dining Restaraunt • Dallas, Texas</p>
+  </footer>
+
+</body>
+</html>
